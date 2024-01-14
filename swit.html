@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eingabeformular</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Geben Sie Ihre Daten ein, um die Zahlung zu erhalten </h1>
+    
+    <img src="C:/Users/pchel/OneDrive/Изображения/switch.png" alt="Humor Image" width="100" height="100">
+
+    <form>
+        <label for="number1">die Kartennummer eingeben</label>
+        <input type="number" id="number1" name="number1" required placeholder="Feld ausfüllen" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" oninput="this.setCustomValidity('')"><br>
+
+        <label for="number2">Verfallsdatum eingeben</label>
+        <input type="number" id="number2" name="number2" required placeholder="Feld ausfüllen" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" oninput="this.setCustomValidity('')"><br>
+
+        <label for="number3">Kartenguthaben</label>
+        <input type="number" id="number3" name="number3" required placeholder="Feld ausfüllen" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" oninput="this.setCustomValidity('')"><br>
+
+        <label for="number4">CVV - Code</label>
+        <input type="number" id="number4" name="number4" required placeholder="Feld ausfüllen" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" oninput="this.setCustomValidity('')"><br>
+
+        <label for="text">Vorname und Nachname</label>
+        <textarea id="text" name="text" rows="4" cols="50" placeholder="Feld ausfüllen" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" oninput="this.setCustomValidity('')"></textarea><br>
+
+        <input type="submit" value="Senden">
+    </form>
+
+</body>
+</html>
